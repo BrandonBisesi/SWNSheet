@@ -1,9 +1,10 @@
-﻿namespace SWNSheet.Views;
+﻿using SWNSheet.ViewModels;
+namespace SWNSheet.Views;
 
 public partial class MainView : ContentPage
 {
 
-	public MainView()
+	public MainView(MainViewModel vm)
 	{
 		InitializeComponent();
 	}

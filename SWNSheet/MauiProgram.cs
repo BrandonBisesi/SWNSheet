@@ -1,4 +1,8 @@
-﻿namespace SWNSheet;
+﻿using SWNSheet.ViewModels;
+using SWNSheet.Views;
+using SWNSheet.Views.ItemsViews;
+
+namespace SWNSheet;
 
 public static class MauiProgram
 {
@@ -13,6 +17,18 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
-	}
+        builder.Services.AddSingleton<MainView>();
+        builder.Services.AddSingleton<MainViewModel>();
+
+        builder.Services.AddSingleton<AllItemsView>();
+        builder.Services.AddSingleton<AllItemsView>();
+        builder.Services.AddSingleton<MoreItemsView>();
+        builder.Services.AddSingleton<MoreItemsView>();
+        builder.Services.AddSingleton<WeaponsView>();
+        builder.Services.AddSingleton<WeaponsView>();
+        builder.Services.AddSingleton<ArmourView>();
+        builder.Services.AddSingleton<ArmourView>();
+
+        return builder.Build();
+    }
 }

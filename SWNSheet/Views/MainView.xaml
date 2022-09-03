@@ -7,7 +7,12 @@
 
     <ScrollView>
         <VerticalStackLayout>
-
+            <Button Text="Items"
+                Command="{Binding AllItemsCommand}"/>
+            <Button Text="Character"
+                Command="{Binding CharacterCommand}"/>
+            <Button Text="Ships"
+                Command="{Binding ShipsCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 
