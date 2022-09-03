@@ -1,4 +1,5 @@
 ﻿using SWNSheet.ViewModels;
+using SWNSheet.ViewModels.ItemsViewModels;
 using SWNSheet.Views;
 using SWNSheet.Views.ItemsViews;
 
@@ -21,13 +22,13 @@ public static class MauiProgram
         builder.Services.AddSingleton<MainViewModel>();
 
         builder.Services.AddSingleton<AllItemsView>();
-        builder.Services.AddSingleton<AllItemsView>();
+        builder.Services.AddSingleton<AllItemsViewModel>();
         builder.Services.AddSingleton<MoreItemsView>();
-        builder.Services.AddSingleton<MoreItemsView>();
+        builder.Services.AddSingleton<MoreItemsViewModel>();
         builder.Services.AddSingleton<WeaponsView>();
-        builder.Services.AddSingleton<WeaponsView>();
+        builder.Services.AddSingleton<WeaponsViewModel>();
         builder.Services.AddSingleton<ArmourView>();
-        builder.Services.AddSingleton<ArmourView>();
+        builder.Services.AddSingleton<ArmourViewModel>();
 
         return builder.Build();
     }

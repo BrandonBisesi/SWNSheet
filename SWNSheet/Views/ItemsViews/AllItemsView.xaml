@@ -5,10 +5,14 @@
              xmlns:viewmodel="clr-namespace:SWNSheet.ViewModels.ItemsViewModels"
              x:DataType="viewmodel:AllItemsViewModel"
              Title="AllItemsView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+    <VerticalStackLayout Padding="10">
+        <Button Text="Weapons"
+                Command="{Binding WeaponsCommand}"/>
+        <Button Text="Armour"
+                Command="{Binding ArmourCommand}"/>
+        <Button Text="More Items"
+                Command="{Binding MoreItemsCommand}"/>
     </VerticalStackLayout>
+    
 </ContentPage>

@@ -5,7 +5,7 @@
              x:DataType="viewmodel:MainViewModel"
              x:Class="SWNSheet.Views.MainView">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
         <Button Text="Items"
                 Command="{Binding AllItemsCommand}"/>
         <Button Text="Character"
