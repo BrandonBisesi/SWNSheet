@@ -5,15 +5,13 @@
              x:DataType="viewmodel:MainViewModel"
              x:Class="SWNSheet.Views.MainView">
 
-    <ScrollView>
-        <VerticalStackLayout>
-            <Button Text="Items"
+    <VerticalStackLayout>
+        <Button Text="Items"
                 Command="{Binding AllItemsCommand}"/>
-            <Button Text="Character"
+        <Button Text="Character"
                 Command="{Binding CharacterCommand}"/>
-            <Button Text="Ships"
+        <Button Text="Ships"
                 Command="{Binding ShipsCommand}"/>
-        </VerticalStackLayout>
-    </ScrollView>
+    </VerticalStackLayout>
 
 </ContentPage>
